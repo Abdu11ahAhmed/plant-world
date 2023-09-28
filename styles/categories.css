@@ -1,0 +1,82 @@
+.section1 {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.section1 h1 {
+    font-size: calc(var(--h1--size) + var(--h2--size));
+    line-height: 100%;
+    margin: 20px 0;
+}
+.section1 p {
+    font-size: calc(var(--p--size) + 3px);
+}
+.section1 a {
+    text-decoration: none;
+    margin: 20px 0 0 0;
+    padding: 0.3rem 2rem;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+}
+/* this is section one  */
+
+.section2 {
+    min-height: 500px;
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+.section2 .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.section2 .content .card {
+    position: relative;
+    min-height: 300px;
+    margin: 1%;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    background: url(../images/Pots\ &\ Planters.jpg) no-repeat;
+    background-size: cover;
+}
+.section2 .content .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #000, #0000);
+}
+.section2 .content .card.big {
+    width: 48%;
+    min-height: 400px;
+}
+.section2 .content .card.small {
+    width: 31.33%;
+}
+.section2 .content .card.full {
+    width: 99%;
+    min-height: 400px;
+}
+.section2 .content .card h4 {
+    padding: 0 0 10px 0;
+    color: white;
+    z-index: 1;
+}
+.section2 .content .card a {
+    padding: 0.3rem 1.5rem;
+    background: #fff;
+    color: var(--accent-color);
+    z-index: 1;
+    font-size: var(--p--size);
+}
