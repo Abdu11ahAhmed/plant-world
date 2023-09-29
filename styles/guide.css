@@ -1,50 +1,16 @@
-.section1 {
-    min-height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.section1 h1 {
-    font-size: calc(var(--h1--size) + var(--h2--size));
-    line-height: 100%;
-    margin: 20px 0;
-}
-
-.section1 p {
-    font-size: calc(var(--p--size) + 3px);
-}
-
-.section1 a {
-    text-decoration: none;
-    margin: 20px 0 0 0;
-    padding: 0.5rem 2rem;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-    border-radius: 20px;
-}
-
-/* this is section one  */
-
 .section2 {
     min-height: 100px;
     width: 100%;
     margin: 50px 0 0 0;
     padding: 0 20px;
 }
-
 .section2 h3 {
     padding: 50px 0 10px 0;
 }
-
 .section2 ul li {
     list-style: none;
     padding: 5px 10px;
 }
-
 .section2 .load {
     min-height: 100px;
     width: 100%;
@@ -52,32 +18,28 @@
     align-items: center;
     justify-content: center;
 }
-
 .section2 a {
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
     padding: 0.5rem 2rem;
     border-radius: 1000px;
     margin: 0 auto;
-    transition: .5s background, .5s color;
+    transition: 0.5s background, 0.5s color;
 }
 .section2 a:hover {
     color: #fff;
     background: var(--accent-color);
 }
-
 /* section two */
 
 .section3 {
     min-height: 300px;
     width: 100%;
 }
-
 .section3 .content {
     min-height: 100px;
     width: 100%;
 }
-
 .section3 .content form input,
 .section3 .content form textarea {
     position: relative;
@@ -91,26 +53,22 @@
     opacity: 0.2;
     margin: 20px 0;
     padding: 0 10px;
-    transition: .5s opacity;
+    transition: 0.5s opacity;
 }
-
 .section3 .content form textarea {
     height: 120px;
     resize: none;
     margin: 40px 0;
 }
-
 .section3 .content form input::placeholder,
 .section3 .content form textarea::placeholder {
     color: #000;
 }
-
 .section3 .content form input:focus,
 .section3 .content form textarea:focus {
     opacity: 1;
 }
-
-.section3 .content form button{
+.section3 .content form button {
     position: relative;
     display: block;
     font-size: var(--p--size);
@@ -122,10 +80,10 @@
     cursor: pointer;
     border-radius: 1000px;
     margin: 0 auto;
-    padding: .5rem 2rem;
-    transition: .5s background, .5s color;
+    padding: 0.5rem 2rem;
+    transition: 0.5s background, 0.5s color;
 }
-.section3 .content form button:hover{
+.section3 .content form button:hover {
     color: #fff;
     background: var(--accent-color);
 }
