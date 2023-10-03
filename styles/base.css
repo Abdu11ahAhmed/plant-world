@@ -29,7 +29,7 @@ h1 {
     font-size: var(--h1--size);
 }
 h2 {
-   font-size: var(--h2--size);
+    font-size: var(--h2--size);
 }
 h3 {
     font-size: var(--h3--size);
@@ -84,6 +84,9 @@ nav ul li a {
     padding: 0.3rem 1rem;
     font-size: calc(var(--p--size) + 2px);
 }
+nav .links li.none {
+    display: none;
+}
 nav .register ul li:nth-child(2) a {
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
@@ -94,6 +97,46 @@ nav .register ul li:nth-child(2) a {
 nav .register ul li:nth-child(2) a:hover {
     color: #fff;
     background: var(--accent-color);
+}
+.humberger {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.humberger::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    margin: 2px 0;
+    background: #000;
+    transition: 0.5s position, 0.5s transform, 0.5s margin;
+}
+.humberger::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    margin: 2px 0;
+    background: #000;
+    transition: 0.5s position, 0.5s transform, 0.5s margin;
+}
+.humberger.active::before {
+    margin: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    background: #fff;
+    transition: 0.5s position, 0.5s transform, 0.5s margin;
+}
+.humberger.active::after {
+    margin: 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    background: #fff;
+    transition: 0.5s position, 0.5s transform, 0.5s margin;
 }
 /* end nav  */
 
@@ -217,12 +260,12 @@ footer .content ul li h4 {
         --h4--size: 16px;
         --p--size: 11.5px;
     }
+    nav {
+        padding: 0 50px;
+    }
 }
 
 @media screen and (max-width: 1150px) {
-    nav {
-        padding: 0px 50px;
-    }
     .container {
         width: 800px;
     }
@@ -233,10 +276,70 @@ footer .content ul li h4 {
         min-height: 100px;
     }
 }
-@media screen and (max-width: 835px) {
-    nav {
-        padding: 0 20px;
+@media screen and (max-width: 1100px) {
+    nav .links {
+        position: fixed;
+        top: -25vh;
+        right: -1000px;
+        padding: 0 100px;
+        background: #183d3d;
+        height: 150vh;
+        width: 1000px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 2254px;
+        border-bottom-left-radius: 2254px;
+        transition: 1s border-radius, 1s right;
+        transition-timing-function: cubic-bezier(0.176, 0.66, 0, 1);
     }
+    nav .links::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: #0000;
+        z-index: -1;
+        pointer-events: none;
+        transition: 0.5s background;
+    }
+    nav .links.active {
+        right: -400px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        transition: 1s border-radius, 1s right;
+        transition-timing-function: cubic-bezier(0.176, 0.66, 0, 1);
+    }
+    nav .links.active::before {
+        content: "";
+        background: #0000002d;
+        pointer-events: unset;
+        transition: 0.5s background;
+    }
+    nav ul li {
+        display: flex;
+    }
+    nav ul li a {
+        display: inline-block;
+        padding: 0.3rem 1rem;
+        font-size: calc(var(--h3--size) + 2px);
+        color: #fff;
+    }
+    nav .links li.none {
+        display: inline-block;
+    }
+    nav .register {
+        display: none;
+    }
+    .humberger {
+        display: flex;
+        z-index: 1;
+        user-select: none;
+    }
+}
+@media screen and (max-width: 835px) {
     .container {
         width: 100%;
         padding: 0 20px;
@@ -244,5 +347,15 @@ footer .content ul li h4 {
     .section1 h1 {
         font-size: 35px;
         margin: 10px 0;
+    }
+}
+@media screen and (max-width: 600px){
+    nav .links {
+        right: -150%;
+        width: 150%;
+        padding: 0 20px;
+    }
+    nav .links.active {
+        right: -50%;
     }
 }
