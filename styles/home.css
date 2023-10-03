@@ -254,9 +254,6 @@
     }
 }
 @media screen and (max-width: 665px) {
-    .section1 {
-        min-height: 300px;
-    }
     .section5 .content {
         grid-template-columns: 1fr;
         width: 300px;

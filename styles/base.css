@@ -366,4 +366,8 @@ footer .content ul li h4 {
     nav .links.active {
         right: -50%;
     }
+
+    .section1{
+        min-height: 300px;
+    }
 }
