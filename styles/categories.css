@@ -53,3 +53,50 @@
     z-index: 1;
     font-size: var(--p--size);
 }
+@media screen and (max-width: 1500px) {
+    .section2 .content .card.big {
+        min-height: 300px;
+    }
+    .section2 .content .card.small {
+        min-height: 230px;
+    }
+    .section2 .content .card.full {
+        min-height: 300px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .section2 .content .card.big {
+        width: 48%;
+        min-height: 250px;
+    }
+    .section2 .content .card.small {
+        width: 48%;
+        min-height: 250px;
+    }
+    .section2 .content .card.full {
+        width: 48%;
+        min-height: 250px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .section2 .content .card.big {
+        width: 100%;
+    }
+    .section2 .content .card.small {
+        width: 100%;
+    }
+    .section2 .content .card.full {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .section2 .content .card.big {
+        min-height: 200px;
+    }
+    .section2 .content .card.small {
+        min-height: 200px;
+    }
+    .section2 .content .card.full {
+        min-height: 200px;
+    }
+}

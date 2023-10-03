@@ -62,3 +62,48 @@
 .section3 .content h3 {
     padding: 50px 0 10px 0;
 }
+@media screen and (max-width: 1800px) {
+    .section2 .content .card {
+        height: 360px;
+    }
+    .section2 .content .card .image {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .section2 .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .section2 .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section2 .content .card {
+        height: 320px;
+    }
+    .section2 .content .card .text {
+        height: 60px;
+    }
+    .section2 .content .card .order {
+        height: 60px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .section2 .content {
+        grid-template-columns: 1fr 1fr ;
+        width: 550px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 590px) {
+    .section2 .content {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .section2 .content .card{
+        width: 250px;
+        margin: 10px auto;
+    }
+}

@@ -7,9 +7,12 @@
 .section2 h3 {
     padding: 50px 0 10px 0;
 }
+.section2 ul {
+    list-style-position: inside;
+}
 .section2 ul li {
-    list-style: none;
     padding: 5px 10px;
+    font-size: calc(var(--p--size) + 3px);
 }
 .section2 .load {
     min-height: 100px;

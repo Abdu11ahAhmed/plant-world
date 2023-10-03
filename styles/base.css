@@ -38,7 +38,7 @@ h4 {
     font-size: var(--h4--size);
 }
 p {
-    font-size: var(--p--size);
+    font-size: calc(var(--p--size) + 3px);
 }
 span {
     font-size: var(--p--size);
@@ -157,9 +157,6 @@ nav .register ul li:nth-child(2) a:hover {
     font-size: calc(var(--h1--size) + var(--h2--size));
     line-height: 100%;
     margin: 20px 0;
-}
-.section1 p {
-    font-size: calc(var(--p--size) + 3px);
 }
 .section1 a {
     text-decoration: none;
@@ -369,5 +366,8 @@ footer .content ul li h4 {
 
     .section1{
         min-height: 300px;
+    }
+    .section1 br{
+        display: none;
     }
 }
