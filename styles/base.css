@@ -111,7 +111,7 @@ nav .register ul li:nth-child(2) a:hover {
 .humberger::before {
     content: "";
     height: 2px;
-    width: 100%;
+    width: 80%;
     margin: 2px 0;
     background: #000;
     transition: 0.5s position, 0.5s transform, 0.5s margin;
@@ -119,7 +119,7 @@ nav .register ul li:nth-child(2) a:hover {
 .humberger::after {
     content: "";
     height: 2px;
-    width: 100%;
+    width: 80%;
     margin: 2px 0;
     background: #000;
     transition: 0.5s position, 0.5s transform, 0.5s margin;
@@ -262,6 +262,7 @@ footer .content ul li h4 {
     }
     nav {
         padding: 0 50px;
+        height: 60px;
     }
 }
 
@@ -344,6 +345,9 @@ footer .content ul li h4 {
         width: 100%;
         padding: 0 20px;
     }
+    nav {
+        padding: 0 20px;
+    }
     .section1 h1 {
         font-size: 35px;
         margin: 10px 0;
@@ -351,9 +355,13 @@ footer .content ul li h4 {
 }
 @media screen and (max-width: 600px){
     nav .links {
+        top: 0;
         right: -150%;
+        height: 100vh;
         width: 150%;
         padding: 0 20px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     nav .links.active {
         right: -50%;
