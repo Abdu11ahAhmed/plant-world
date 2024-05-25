@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/categories.css" />
+        <title>Plant world | About</title>
+    </head>
+
+    <body>
+        <!-- starting navbar -->
+        <nav>
+            <a href="home.html" class="logo">
+                <img src="../images/Green Plants Logo.png" alt="" />
+            </a>
+            <div class="links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="guide.html">Plants guide</a></li>
+                    <li><a href="pots.html">Pots & Planters</a></li>
+                    <li class="none"><a href="#">Sign in</a></li>
+                    <li class="none"><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="register">
+                <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="humberger"></div>
+        </nav>
+        <!-- ending navbar -->
+
+        <!-- starting container -->
+        <div class="container">
+            <div class="section1">
+                <span>categories</span>
+                <h1>
+                    This is all Categories on <br />
+                    Green Plants website
+                </h1>
+                <p>One place for all your gardening needs.</p>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+        <!-- ending container -->
+
+        <div class="card big-image">
+            <img src="../images/Pots & Planters.jpg" alt="" />
+        </div>
+
+        <!-- starting container -->
+        <div class="container">
+            <div class="section2">
+                <div class="header">
+                    <h2>
+                        Let's see our <br />
+                        categories
+                    </h2>
+                </div>
+                <div class="content">
+                    <div class="card big">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card big">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card full">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card big">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card big">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card big">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card big">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="card small">
+                        <h4>Spring collections</h4>
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ending container -->
+
+        <!-- starting footer -->
+        <footer>
+            <div class="content">
+                <div>
+                    <a href="home.html" class="logo">
+                        <img src="../images/Green Plants Logo.png" alt="" />
+                    </a>
+                    <p>
+                        All copyright &copy; reseved to <br />
+                        Green Plants webaite
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <h4>Main links</h4>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Plant guide</a></li>
+                    <li><a href="#">Pots & Planters</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Polices</h4>
+                    </li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Return</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Developers</h4>
+                    </li>
+                    <li><a>Front-end :</a></li>
+                    <li><a href="#">Abdullah Ahmed</a></li>
+                    <li><a>Back-end :</a></li>
+                    <li><a href="#">Somaya Ahmed</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- ending footer -->
+    </body>
+
+    <!-- scripts -->
+    <script src="../js/nav.js"></script>
+    <script>
+        let humberger = document.querySelector(".humberger");
+        let links = document.querySelector(".links");
+
+        humberger.onclick = () => {
+            humberger.classList.toggle("active");
+            links.classList.toggle("active");
+        };
+    </script>
+</html>
